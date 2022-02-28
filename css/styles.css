@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(2, 2, 105);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+.buttons{
+    text-align: center;
+    margin: 0 0 20px;
+}
+button{
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #01018B;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0303ec;
+    
+}
+.buttons button{
+    padding: 10px 20px;
+    margin: 5px;
+}
+.number{
+    display: inline-block;
+    background-color: #03ec2a;
+    text-align: right;
+}
+#countries{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#countries div{
+    background-color: rgb(1, 1, 139);
+    padding: 15px ;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0;
+    transition: box-shadow 0.8s;
+}
+
+
+#loading{
+    display: non;
+}
+
+#countries div:hover{
+    box-shadow: 0 0 05px 5px #ffffff82;
+}
+
+input{
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px 0;
+    border: 0;
+    min-width: 260px;
+}
+
+
+#search{
+    background-color: #0D6EFD;
+}
+
+#search:hover{
+    background-color: #0303EC;
+}
+i{
+    font-size: 30px;
+    color: #fff;;
+}
+
+
+img{
+    display: inline-block;
+    margin: auto;
+    
+}
+
+h3 {
+    line-height: 10px;
+    font-size: 18px;
+   
+    
+    
+}
+
+ul {
+    margin: 0 0 15px 20px;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    
+}
+
+#country-count{
+    margin-left: 20px;
+}
+
+.modal, .modal-dialog{
+    background-color: #01018b48 !important;
+    color: #000;
+}
+
+.modal-dialog {
+    max-width: 500px;
+    margin: auto !important;
+}
+.modal-content{
+    border: 0;
+}
+
+#more-details{
+    display: none;
+}
+
+footer{
+    background-color: #01018B;
+    padding: 15px 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    #countries{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    #countries{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:600px) {
+    #countries{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo img{
+        max-width: 250px;
+    }
+    
+}
